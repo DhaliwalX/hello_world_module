@@ -17,6 +17,7 @@ static int hello_init(void)
 
 static void hello_exit(void)
 {
+    printk(KERN_DEBUG "I am exiting now!\n");
 }
 
 module_init(hello_init);
